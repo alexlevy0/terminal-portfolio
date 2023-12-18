@@ -21,7 +21,7 @@ const PROMPT = document.getElementById("prompt");
 const COMMANDS = ["help", "about", "projects", "whoami", "repo", "banner", "clear"];
 const REPO_LINK = com.REPO_LINK;
 const HISTORY : string[] = [];
-const SUDO_PASSWORD = "050823"
+const SUDO_PASSWORD = "admin"
 
 const scrollToBottom = () => {
   const MAIN = document.getElementById("main");
@@ -367,7 +367,7 @@ const initEventListeners = () => {
     USERINPUT.focus();
   });
 
-  console.log("%cPassword: 050823", "color: red; font-size: 20px;");
+  console.log("%cPassword: admin", "color: red; font-size: 20px;");
 }
 
 initEventListeners();
