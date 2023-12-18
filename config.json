@@ -1,0 +1,31 @@
+{
+        "ascii": [
+                " █████╗ ██╗     ███████╗██╗  ██╗    ██╗     ███████╗██╗   ██╗██╗   ██╗",
+                "██╔══██╗██║     ██╔════╝╚██╗██╔╝    ██║     ██╔════╝██║   ██║╚██╗ ██╔╝",
+                "███████║██║     █████╗   ╚███╔╝     ██║     █████╗  ██║   ██║ ╚████╔╝ ",
+                "██╔══██║██║     ██╔══╝   ██╔██╗     ██║     ██╔══╝  ╚██╗ ██╔╝  ╚██╔╝  ",
+                "██║  ██║███████╗███████╗██╔╝ ██╗    ███████╗███████╗ ╚████╔╝    ██║  ",
+                "╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═╝    ╚══════╝╚══════╝  ╚═══╝     ╚═╝   "
+        ],
+        "repoLink": "https://github.com/alexlevy0/terminal-portfolio",
+        "social": {
+                "email": "alexlevy0@gmail.com",
+                "github": "alexlevy0",
+                "linkedin": "alexlevy0"
+        },
+        "aboutGreeting": "I'm Alex. I'm a software engineer with a passion for full-stack and cloud-native application development",
+        "projects": [
+                [
+                        "Clipcrafter AI",
+                        "Transform long videos into captivating, short-form masterpieces.",
+                        "https://github.com/alexlevy0/clipcrafter-ai"
+                ],
+                ["Disparition", "Tensorflow app to predict and hide body from webcam", "https://github.com/alexlevy0/disparition"],
+                [
+                        "One-click Face Swap",
+                        "Take a video and replace the face in it with a face of your choice. You only need one image of the desired face. No dataset, no training.",
+                        "https://github.com/alexlevy0/-"
+                ],
+                ["All", "View all of the projects I'm working on.", "https://github.com/alexlevy0"]
+        ]
+}
