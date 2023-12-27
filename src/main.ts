@@ -182,7 +182,7 @@ function commandHandler(input : string) {
       break;
     case 'banner':
       if(bareMode) {
-        writeLines(["WebShell v1.0.0", "<br>"])
+        writeLines(["LevShell v1.0.0", "<br>"])
         break;
       }
       writeLines(com.BANNER);
