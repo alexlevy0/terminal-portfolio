@@ -1,3 +1,4 @@
+// import { BLOG } from "./commands"
 import * as com from "./commands"
 
 //mutWriteLines gets deleted and reassigned
@@ -231,9 +232,9 @@ function commandHandler(input: string) {
                                 window.open("https://alexlevy0.com")
                         }, 500)
                         break
-                case "blog":
-                        writeLines(com.BLOG)
-                        break
+                // case "blog":
+                //         writeLines(BLOG)
+                //         break
                 case "rm -rf":
                         if (bareMode) {
                                 writeLines(["don't try again.", "<br>"])

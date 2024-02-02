@@ -94,6 +94,7 @@ const getPost = async () => {
         }
 }
 
+// @ts-expect-error WIP
 const createBlog = async (): Promise<string[]> => {
         const _articles: any[][] = await getPost()
         let string = ""
@@ -248,6 +249,8 @@ const DEFAULT = createDefault()
 const HELP = createHelp()
 const ABOUT = createAbout()
 const PROJECTS = createProject()
-const BLOG = createBlog()
+// const BLOG = await createBlog()
 
-export { BLOG, BANNER, DEFAULT, HELP, ABOUT, PROJECTS, REPO_LINK, createWhoami as WHOAMI }
+// export { BLOG }
+
+export { /* BLOG,  */ BANNER, DEFAULT, HELP, ABOUT, PROJECTS, REPO_LINK, createWhoami as WHOAMI }
