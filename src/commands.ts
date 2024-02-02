@@ -248,6 +248,6 @@ const DEFAULT = createDefault()
 const HELP = createHelp()
 const ABOUT = createAbout()
 const PROJECTS = createProject()
-const BLOG = await createBlog()
+const BLOG = createBlog()
 
 export { BLOG, BANNER, DEFAULT, HELP, ABOUT, PROJECTS, REPO_LINK, createWhoami as WHOAMI }
