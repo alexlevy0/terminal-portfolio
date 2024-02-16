@@ -28,11 +28,11 @@ export default defineConfig({
                 /**
                  * See https://vercel.com/docs/projects/project-configuration#rewrites
                  */
-                rewrites: [{ source: "/demo", destination: "/demo.html" }],
+                "rewrites": [{ "source": "/(.*)", "destination": "/" }],
                 /**
                  * See https://vercel.com/docs/projects/project-configuration#redirects
                  */
-                redirects: [{ source: "/example", destination: "/demo.html", permanent: false }],
+                // redirects: [{ source: "/example", destination: "/demo.html", permanent: false }],
                 /**
                  * See https://vercel.com/docs/projects/project-configuration#cleanurls
                  */
