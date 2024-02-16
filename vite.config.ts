@@ -47,14 +47,14 @@ export default defineConfig({
                  * For instance, a framework can leverage this to have a generic ssr endpoint
                  * without requiring the user to write any code.
                  */
-                additionalEndpoints: [
-                        {
-                                // can also be an Object representing an esbuild StdinOptions
-                                source: "/path/to/file.ts",
-                                // URL path of the handler, will be generated to `.vercel/output/functions/api/file.func/index.js`
-                                destination: "/api/file",
-                        },
-                ],
+                // additionalEndpoints: [
+                //         {
+                //                 // can also be an Object representing an esbuild StdinOptions
+                //                 source: "/path/to/file.ts",
+                //                 // URL path of the handler, will be generated to `.vercel/output/functions/api/file.func/index.js`
+                //                 destination: "/api/file",
+                //         },
+                // ],
                 /**
                  * Advanced configuration to override .vercel/output/config.json
                  * See https://vercel.com/docs/build-output-api/v3/configuration#configuration
@@ -78,13 +78,13 @@ export default defineConfig({
                  *
                  * Check `/packages/vike/vike.ts` `vitePluginVercelVpsIsrPlugin` for advanced usage.
                  */
-                isr: {
-                        // `symlink: 'ssr_'` means that a function is available under `.vercel/output/functions/ssr_.func`
-                        "/pages/a": { expiration: 15, symlink: "ssr_", route: "^/a/.*$" },
-                        "/pages/b/c": { expiration: 15, symlink: "ssr_", route: "^/b/c/.*$" },
-                        "/pages/d": { expiration: 15, symlink: "ssr_", route: "^/d$" },
-                        "/pages/e": { expiration: 25 },
-                },
+                // isr: {
+                //         // `symlink: 'ssr_'` means that a function is available under `.vercel/output/functions/ssr_.func`
+                //         "/pages/a": { expiration: 15, symlink: "ssr_", route: "^/a/.*$" },
+                //         "/pages/b/c": { expiration: 15, symlink: "ssr_", route: "^/b/c/.*$" },
+                //         "/pages/d": { expiration: 15, symlink: "ssr_", route: "^/d$" },
+                //         "/pages/e": { expiration: 25 },
+                // },
                 /**
                  * Defaults to `.vercel/output`. Mostly useful for testing purpose
                  */
