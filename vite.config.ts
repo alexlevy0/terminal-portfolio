@@ -1,8 +1,17 @@
 // vite.config.ts
 import { defineConfig } from "vite"
 import vercel from "vite-plugin-vercel"
+import { resolve } from 'path'
 
 export default defineConfig({
+        build: {
+                rollupOptions: {
+                        input: {
+                                main: resolve(__dirname, "index.html"),
+                                nested: resolve(__dirname, "demo.html"),
+                        },
+                },
+        },
         plugins: [vercel()],
         vercel: {
                 // All the followings optional
@@ -28,11 +37,11 @@ export default defineConfig({
                 /**
                  * See https://vercel.com/docs/projects/project-configuration#rewrites
                  */
-                "rewrites": [{ "source": "/(.*)", "destination": "/" }],
+                rewrites: [{ source: "/(.*)", destination: "/" }],
                 /**
                  * See https://vercel.com/docs/projects/project-configuration#redirects
                  */
-                redirects: [{ source: "/demo", destination: "/demo.html", permanent: true }],
+                // redirects: [{ source: "/demo", destination: "/demo.html", permanent: true }],
                 /**
                  * See https://vercel.com/docs/projects/project-configuration#cleanurls
                  */
