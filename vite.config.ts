@@ -28,7 +28,7 @@ export default defineConfig({
                 /**
                  * See https://vercel.com/docs/projects/project-configuration#rewrites
                  */
-                "rewrites": [{ "source": "/(.*)", "destination": "/" }],
+                "rewrites": [{ "source": "/demo(.*)", "destination": "/demo.html" }],
                 /**
                  * See https://vercel.com/docs/projects/project-configuration#redirects
                  */
