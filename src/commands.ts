@@ -140,9 +140,12 @@ const createBanner = (): string[] => {
         banner.push("<br>")
         banner.push("Welcome to LevShell v1.0.0")
         banner.push("Type <span class='command'>'help'</span> for a list of all available commands.")
-        //   banner.push(`Type <span class='command'>'repo'</span> to view the GitHub repository or click <a href='${command.repoLink}' target='_blank'>here</a>.`);
         banner.push(
                 `Type <span class='command'>'blog'</span> to read the blog or click <a href='${command.blogLink}' target='_blank'>here</a>.`,
+        )
+        banner.push("<br>")
+        banner.push(
+                `Type <span class='command'>'demo'</span> to see Alex's web portfolio or click <a href='${command.demo}' target='_blank'>here</a>.`,
         )
         banner.push("<br>")
         return banner
