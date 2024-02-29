@@ -143,11 +143,11 @@ const createBanner = (): string[] => {
         banner.push(
                 `Type <span class='command'>'blog'</span> to read the blog or click <a href='${command.blogLink}' target='_blank'>here</a>.`,
         )
-        banner.push("<br>")
-        banner.push(
-                `Type <span class='command'>'demo'</span> to see Alex's web portfolio or click <a href='${command.demo}' target='_blank'>here</a>.`,
-        )
-        banner.push("<br>")
+        // banner.push("<br>")
+        // banner.push(
+        //         `Type <span class='command'>'demo'</span> to see Alex's web portfolio or click <a href='${command.demo}' target='_blank'>here</a>.`,
+        // )
+        // banner.push("<br>")
         return banner
 }
 
