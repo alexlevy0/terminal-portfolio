@@ -232,9 +232,13 @@ function commandHandler(input: string) {
                                 window.open("https://alexlevy0.com")
                         }, 500)
                         break
-                // case "blog":
-                //         writeLines(BLOG)
-                //         break
+                case "blog":
+                        // writeLines(com.BLOG)
+                        writeLines(["Redirecting to Blog...", "<br>"])
+                        setTimeout(() => {
+                                window.open("https://alexlevy0.github.io/blog/", "_blank")
+                        }, 500)
+                        break
                 case "rm -rf":
                         if (bareMode) {
                                 writeLines(["don't try again.", "<br>"])

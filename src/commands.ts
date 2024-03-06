@@ -254,6 +254,4 @@ const ABOUT = createAbout()
 const PROJECTS = createProject()
 // const BLOG = await createBlog()
 
-// export { BLOG }
-
 export { /* BLOG,  */ BANNER, DEFAULT, HELP, ABOUT, PROJECTS, REPO_LINK, createWhoami as WHOAMI }
